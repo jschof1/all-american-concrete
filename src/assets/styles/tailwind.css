@@ -19,6 +19,15 @@
     color: var(--aw-color-text-muted);
   }
 }
+@layer utilities {
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 
 @layer components {
   .btn {
@@ -58,6 +67,10 @@
   right: 0;
   bottom: 70px !important;
   padding: 0 5px;
+}
+.hidden-header {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .dropdown:focus .dropdown-menu,
