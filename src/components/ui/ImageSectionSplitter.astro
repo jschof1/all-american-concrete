@@ -1,0 +1,8 @@
+---
+import Image from '~/components/common/Image.astro';
+import wideBg from '~/assets/images/wide-bg.webp';
+---
+
+<section class="w-full relative overflow-hidden">
+  <Image src={wideBg} alt="Wide Background" class="w-full h-32 object-cover transition-transform duration-500 ease-in-out" onscroll="this.style.transform='scale(1.05)';">
+</section>

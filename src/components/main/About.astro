@@ -1,0 +1,64 @@
+---
+import { fetchContent } from '../../utils/fetchContent';
+const contentMap = await fetchContent('About');
+---
+
+<section class="container mx-auto px-6 lg:px-12 py-12 lg:py-16 flex flex-col lg:flex-row items-start justify-between">
+        <div class="w-full lg:w-2/3 px-6 lg:px-8 mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
+          <div class="max-w-lg">
+            <h2 class="text-base font-bold text-gray-500 uppercase tracking-wide mb-4">{contentMap['1h2Indiv']}</h2>
+            <div class="w-28 h-1 bg-red-700 mb-6"></div>
+            <p class="text-2xl leading-relaxed sm:text-4xl sm:leading-10 text-gray-800 font-extralight mb-8">
+              {contentMap['1pIndiv']}
+            </p>
+          </div>
+        </div>
+
+        <div class="relative py-3 sm:max-w-lg sm:mx-auto" data-aos="fade-left" data-aos-duration="3000">
+          <div class="absolute inset-0 border-2 border-white bg-gradient-to-r from-red-700 to-red-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6"></div>
+          <div class="text-white relative px-4 py-6 bg-red-900 border-4 border-white shadow-lg sm:rounded-md sm:p-12">
+            <div class="text-center pb-6">
+              <h1 class="text-3xl">{contentMap['1h1Indiv']}</h1>
+
+              <p class="text-white">{contentMap['2pIndiv']}</p>
+            </div>
+
+            <form>
+              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name" name="name">
+
+              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email" name="email">
+
+              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Subject" name="_subject">
+
+              <textarea class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Type your message here..." name="message" style="height: 121px"></textarea>
+
+              <div class="flex justify-between">
+                <input class="shadow bg-white text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="container px-6 lg:px-12 py-8 lg:py-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="flex flex-wrap justify-center -mx-6 lg:-mx-8 gap-6">
+          <div class="w-full md:w-5/12 px-6 lg:px-8 mb-8 md:mb-0">
+            <div class="bg-white shadow-lg rounded-lg p-8 transform transition duration-300 hover:scale-105">
+              <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">{contentMap['1h3Indiv']}</h3>
+              <p class="text-gray-600 leading-relaxed">
+                From residential driveways to large commercial foundations, All American Concrete offers a wide range of
+                concrete services to meet your unique needs. We work closely with you from start to finish, ensuring
+                every detail is just right.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-5/12 px-6 lg:px-8 mt-12 md:mt-0">
+            <div class="bg-white shadow-lg rounded-lg p-8 transform transition duration-300 hover:scale-105">
+              <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">{contentMap['2h3Indiv']}</h3>
+              <p class="text-gray-600 leading-relaxed">
+                All American Concrete employs experienced professionals who bring skill, dedication, and a commitment to
+                quality to every project. We're proud to serve our community with excellence and integrity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,104 @@
+---
+import { fetchContent } from '../../utils/fetchContent';
+const contentMap = await fetchContent('Team');
+---
+<section class="py-16 px-16 bg-red-900 text-white">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center sm:text-left">{contentMap['1h2Insection']}</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+            <img src="https://placehold.co/300x300?text=Team+Member" alt="Portrait of Sarah Miller" class="w-full h-64 object-cover mb-4">
+            <h3 class="font-bold text-xl mb-2 text-center lg:text-left">{contentMap['1h3Indiv']}</h3>
+            <p class="text-center lg:text-left">
+              {contentMap['1pIndiv']}
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+            <img src="https://placehold.co/300x300?text=Team+Member" alt="Portrait of David Carter" class="w-full h-64 object-cover mb-4">
+            <h3 class="font-bold text-xl mb-2 text-center lg:text-left">{contentMap['2h3Indiv']}</h3>
+            <p class="text-center lg:text-left">
+              {contentMap['2pIndiv']}
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+            <img src="https://placehold.co/300x300?text=Team+Member" alt="Portrait of Emily Davis" class="w-full h-64 object-cover mb-4">
+            <h3 class="font-bold text-xl mb-2 text-center lg:text-left">{contentMap['3h3Indiv']}</h3>
+            <p class="text-center lg:text-left">
+              {contentMap['3pIndiv']}
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <button class="bg-white text-red-800 px-6 py-3 font-bold">{contentMap['1buttonIndiv']}</button>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-6 py-12">
+        <h1 class="text-5xl font-bold mb-12">News &amp; Updates</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="flex space-x-6">
+            <div class="flex-shrink-0 p-6 text-center">
+              <div class="text-3xl font-bold">{contentMap['9divIndiv']}</div>
+              <div class="text-base">{contentMap['10divIndiv']}</div>
+            </div>
+            <div class="ml-6">
+              <h2 class="text-2xl font-bold mb-2">{contentMap['2h2Indiv']}</h2>
+              <p class="text-gray-600 text-lg mb-4">
+                Discover the latest advancements in concrete technology and how they are shaping the future of
+                construction.
+              </p>
+              <div class="flex items-center text-gray-500 text-base mt-4">
+                <i class="fas fa-user mr-2"></i> admin <i class="fas fa-folder ml-6 mr-2"></i> Construction, Technology
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-6">
+            <div class="flex-shrink-0 bg-gray-100 p-6 text-center">
+              <div class="text-3xl font-bold">{contentMap['15divIndiv']}</div>
+              <div class="text-base">{contentMap['16divIndiv']}</div>
+            </div>
+            <div class="ml-6">
+              <h2 class="text-2xl font-bold mb-2">{contentMap['3h2Indiv']}</h2>
+              <p class="text-gray-600 text-lg mb-4">
+                {contentMap['5pIndiv']}
+              </p>
+              <div class="flex items-center text-gray-500 text-base mt-4">
+                <i class="fas fa-user mr-2"></i> admin <i class="fas fa-folder ml-6 mr-2"></i> Sustainability,
+                Construction
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-6">
+            <div class="flex-shrink-0 bg-gray-100 p-6 text-center">
+              <div class="text-3xl font-bold">{contentMap['21divIndiv']}</div>
+              <div class="text-base">{contentMap['22divIndiv']}</div>
+            </div>
+            <div class="ml-6">
+              <h2 class="text-2xl font-bold mb-2">{contentMap['4h2Indiv']}</h2>
+              <p class="text-gray-600 text-lg mb-4">
+                {contentMap['6pIndiv']}
+              </p>
+              <div class="flex items-center text-gray-500 text-base mt-4">
+                <i class="fas fa-user mr-2"></i> admin <i class="fas fa-folder ml-6 mr-2"></i> Safety, Construction
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-6">
+            <div class="flex-shrink-0 bg-gray-100 p-6 text-center">
+              <div class="text-3xl font-bold">{contentMap['27divIndiv']}</div>
+              <div class="text-base">{contentMap['28divIndiv']}</div>
+            </div>
+            <div class="ml-6">
+              <h2 class="text-2xl font-bold mb-2">{contentMap['5h2Indiv']}</h2>
+              <p class="text-gray-600 text-lg mb-4">
+                {contentMap['7pIndiv']}
+              </p>
+              <div class="flex items-center text-gray-500 text-base mt-4">
+                <i class="fas fa-user mr-2"></i> admin <i class="fas fa-folder ml-6 mr-2"></i> Management, Construction
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

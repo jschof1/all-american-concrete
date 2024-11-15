@@ -1,0 +1,91 @@
+---
+import { fetchContent } from '../../utils/fetchContent';
+const contentMap = await fetchContent('Portfolio');
+---
+
+<section class="bg-gradient-to-b from-red-900 to-red-700 py-16">
+        <div class="container mx-auto px-4 py-8" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1500">
+          <div class="text-center mb-12" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white uppercase tracking-wider mb-4">{contentMap['1h2Indiv']}</h2>
+            <div class="w-16 h-1 bg-white mx-auto mb-4"></div>
+            <p class="text-lg font-light text-white max-w-xl mx-auto leading-relaxed">
+              {contentMap['1pIndiv']}
+            </p>
+          </div>
+
+          <div class="flex flex-wrap justify-center items-center space-x-4 bg-white bg-opacity-90 backdrop-blur-md shadow-lg rounded-full py-2 px-4 mb-10" data-aos="flip-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
+            <button data-filter="all" class="filter-button text-sm font-semibold text-gray-800 px-4 py-2 mb-2 transition duration-200 transform hover:bg-yellow-400 hover:text-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full">
+              {contentMap['1buttonIndiv']}
+            </button>
+            <button data-filter="commercial" class="filter-button text-sm font-light text-gray-800 px-4 py-2 mb-2 transition duration-200 transform hover:bg-yellow-400 hover:text-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full">
+              {contentMap['2buttonIndiv']}
+            </button>
+            <button data-filter="residential" class="filter-button text-sm font-light text-gray-800 px-4 py-2 mb-2 transition duration-200 transform hover:bg-yellow-400 hover:text-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full">
+              {contentMap['3buttonIndiv']}
+            </button>
+            <button data-filter="industrial" class="filter-button text-sm font-light text-gray-800 px-4 py-2 mb-2 transition duration-200 transform hover:bg-yellow-400 hover:text-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full">
+              {contentMap['4buttonIndiv']}
+            </button>
+            <button data-filter="infrastructure" class="filter-button text-sm font-light text-gray-800 px-4 py-2 mb-2 transition duration-200 transform hover:bg-yellow-400 hover:text-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full">
+              {contentMap['5buttonIndiv']}
+            </button>
+            <button data-filter="agricultural" class="filter-button text-sm font-light text-gray-800 px-4 py-2 mb-2 transition duration-200 transform hover:bg-yellow-400 hover:text-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full">
+              {contentMap['6buttonIndiv']}
+            </button>
+            <button data-filter="public-works" class="filter-button text-sm font-light text-gray-800 px-4 py-2 mb-2 transition duration-200 transform hover:bg-yellow-400 hover:text-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full">
+              {contentMap['7buttonIndiv']}
+            </button>
+          </div>
+          <div class="columns-1 sm:columns-2 lg:columns-3 gap-5">
+            <div class="filter-item relative mb-5 break-inside-avoid shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-filter="commercial">
+              <img class="w-full h-auto" src="https://pagedone.io/asset/uploads/1688031162.jpg" alt="Commercial Project">
+            </div>
+            <div class="filter-item relative mb-5 break-inside-avoid shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1100" data-filter="residential">
+              <img class="w-full h-auto" src="https://pagedone.io/asset/uploads/1688031232.jpg" alt="Residential Project">
+            </div>
+            <div class="filter-item relative mb-5 break-inside-avoid shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1200" data-filter="industrial">
+              <img class="w-full h-auto" src="https://pagedone.io/asset/uploads/1688031357.jpg" alt="Industrial Project">
+            </div>
+            <div class="filter-item relative mb-5 break-inside-avoid shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-filter="infrastructure">
+              <img class="w-full h-auto" src="https://pagedone.io/asset/uploads/1688031375.jpg" alt="Infrastructure Project">
+            </div>
+            <div class="filter-item relative mb-5 break-inside-avoid shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1400" data-filter="agricultural">
+              <img class="w-full h-auto" src="https://pagedone.io/asset/uploads/1688031396.jpg" alt="Agricultural Project">
+            </div>
+            <div class="filter-item relative mb-5 break-inside-avoid shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1500" data-filter="public-works">
+              <img class="w-full h-auto" src="https://pagedone.io/asset/uploads/1688031414.png" alt="Public Works Project">
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        // JavaScript for toggling the mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+  
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+          const filterButtons = document.querySelectorAll('.filter-button');
+          const filterItems = document.querySelectorAll('.filter-item');
+  
+          filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+              const filter = button.getAttribute('data-filter');
+  
+              filterItems.forEach((item) => {
+                if (filter === 'all' || item.getAttribute('data-filter') === filter) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+  
+              // Highlight the active button
+              filterButtons.forEach((btn) => btn.classList.remove('bg-yellow-400', 'text-gray-800'));
+              button.classList.add('bg-yellow-400', 'text-gray-800');
+            });
+          });
+        });
+      </script>
