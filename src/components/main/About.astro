@@ -3,7 +3,7 @@ import { fetchContent } from '../../utils/fetchContent';
 const contentMap = await fetchContent('About');
 ---
 
-<section class="container mx-auto px-6 lg:px-12 py-12 lg:py-16 flex flex-col lg:flex-row items-start justify-between">
+<section class="container mx-auto px-6 lg:px-12 py-12 lg:py-16 flex flex-col lg:flex-row items-start justify-between" id="about">
         <div class="w-full lg:w-2/3 px-6 lg:px-8 mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
           <div class="max-w-lg">
             <h2 class="text-base font-bold text-gray-500 uppercase tracking-wide mb-4">{contentMap['1h2Indiv']}</h2>

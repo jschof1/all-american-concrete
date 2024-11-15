@@ -3,8 +3,11 @@ import { fetchContent } from '../../utils/fetchContent';
 const contentMap = await fetchContent('Hero');
 import Image from '~/components/common/Image.astro';
 import AllAmericanLogo from '~/assets/images/all-american-logo-text.webp';
-import wideBg from '~/assets/images/wide-bg.webp';
 ---
+<div
+  class="absolute inset-0 bg-cover bg-center"
+  style="background-image: url('/assets/images/construction-hero-blur.webp');"
+></div>
 <section class="relative h-screen">
         <div class="container mx-auto h-full flex flex-col justify-center items-start text-white relative z-10 px-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <h1 class="text-5xl md:text-5xl font-medium mb-4 flex items-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1100" data-aos-easing="ease-in-out">
