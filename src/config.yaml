@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: All American Concrete
+  site: 'https://allamericancconcretemichigan.com'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: All American Concrete
+    template: '%s — All American Concrete'
+  description: "All American Concrete is a concrete company in Michigan that specializes in residential and commercial concrete services."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: All American Concrete
     images:
       - url: '~/assets/images/default.png'
         width: 1200
