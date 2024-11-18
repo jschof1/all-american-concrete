@@ -9,7 +9,6 @@ import CustomStyles from '~/components/CustomStyles.astro';
 import ApplyColorMode from '~/components/common/ApplyColorMode.astro';
 import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification from '~/components/common/SiteVerification.astro';
-import { GoogleTagmanagerPartytown } from '@digi4care/astro-google-tagmanager';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 
@@ -26,6 +25,11 @@ export interface Props {
 
 const { metadata = {} } = Astro.props;
 const { language, textDirection } = I18N;
+// Import Clarity
+import Clarity from '@microsoft/clarity';
+
+// Initialize Clarity with your project ID
+Clarity.init('p0pcfmq0q6');
 ---
 
 <!doctype html>

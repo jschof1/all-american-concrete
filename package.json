@@ -30,6 +30,7 @@
     "@fontsource-variable/inter": "^5.1.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@microsoft/clarity": "^1.0.0",
     "aos": "^2.3.4",
     "astro": "^4.16.12",
     "astro-embed": "^0.7.4",
