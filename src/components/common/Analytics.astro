@@ -1,6 +1,7 @@
 ---
 import { GoogleAnalytics } from '@astrolib/analytics';
 import { ANALYTICS } from 'astrowind:config';
+import { GoogleTagmanagerPartytown } from '@digi4care/astro-google-tagmanager';
 ---
 
 {
@@ -9,5 +10,6 @@ import { ANALYTICS } from 'astrowind:config';
       id={String(ANALYTICS.vendors.googleAnalytics.id)}
       partytown={ANALYTICS?.vendors?.googleAnalytics?.partytown}
     />
+    <GoogleTagmanagerPartytown id={ANALYTICS.vendors.googleTagManager.id} />
   ) : null
 }

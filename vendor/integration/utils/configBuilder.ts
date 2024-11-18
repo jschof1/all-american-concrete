@@ -187,6 +187,9 @@ const getAnalytics = (config: Config) => {
         id: undefined,
         partytown: true,
       },
+      googleTagManager: {
+        id: undefined,
+      },
     },
   };
 
