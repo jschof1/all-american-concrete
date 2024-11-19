@@ -23,17 +23,19 @@ const contentMap = await fetchContent('About');
               <p class="text-white">{contentMap['2pIndiv']}</p>
             </div>
 
-            <form name="contact" netlify>
-              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name" name="name">
+            <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.querySelector('button').innerText='Thank you for contacting us!'; return false;">
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
-              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email" name="email">
+              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name" name="name" required>
 
-              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Subject" name="_subject">
+              <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email" name="email" required>
 
-              <textarea class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Type your message here..." name="message" style="height: 121px"></textarea>
+              <textarea class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Type your message here..." name="message" required style="height: 121px"></textarea>
+
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
               <div class="flex justify-between">
-                <input class="shadow bg-white text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Send">
+                <button class="shadow bg-white text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send</button>
               </div>
             </form>
           </div>

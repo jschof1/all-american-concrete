@@ -1,15 +1,12 @@
 ---
 title: Concrete Innovations in Modern Construction
-excerpt: Concrete is evolving with innovations like self-healing and
-  eco-friendly materials. At All American Concrete, we bring these advancements
-  to Michigan projects, combining durability, sustainability, and stunning
-  designs.
+excerpt: Concrete is evolving with self-healing and eco-friendly materials. At All American Concrete, we bring these advancements to Michigan projects.
 category: innovation
 tags:
   - innovation
   - sustainability
 image: https://images.unsplash.com/photo-1532562145520-b8cce2486cd2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-author: Eddie
+author: All American Concrete Team
 ---
 # Concrete Innovations in Modern Construction: A Revolution in Durability and Design  
 

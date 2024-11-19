@@ -59,9 +59,16 @@ import AllAmericanLogo from '~/assets/images/all-american-logo-text.webp';
       data-aos-duration="1400"
       data-aos-easing="ease-in-out"
     >
-      <button class="bg-red-700 text-white font-bold py-4 px-8 md:py-3 md:px-6 rounded hover:bg-white hover:text-red-700 hover:border-2 hover:border-red-700 transition duration-300">
-        {contentMap['1buttonIndiv']}
-      </button>
+      <form action="https://api.web3forms.com/submit" method="POST" class="w-full" target="_self">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="name" value="Anonymous">
+        <input type="hidden" name="email" value="anonymous@example.com">
+        <input type="hidden" name="message" value="I want a free quote sent directly.">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button type="submit" class="bg-red-700 text-white font-bold py-4 px-8 md:py-3 md:px-6 rounded hover:bg-white hover:text-red-700 hover:border-2 hover:border-red-700 transition duration-300" onclick="this.innerText='We will get in contact with you shortly!'; return false;">
+          {contentMap['1buttonIndiv']}
+        </button>
+      </form>
     </div>
     <div
       class="mt-14 md:mt-12 hidden md:block"
