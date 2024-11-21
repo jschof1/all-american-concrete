@@ -3,28 +3,27 @@ site:
   site: 'https://allamericancconcretemichigan.com'
   base: '/'
   trailingSlash: false
-
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: AxmCLF4hdvxmEVwchR6ue3bMWi_sIv-vmkpDJ8tYIrE
 
 # Default SEO metadata
 metadata:
   title:
     default: All American Concrete
     template: '%s — All American Concrete'
-  description: "All American Concrete is a concrete company in Michigan that specializes in residential and commercial concrete services."
+  description: "All American Concrete delivers top-quality residential and commercial concrete services across Michigan. Call today for expert craftsmanship!"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: All American Concrete
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/screenshot.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@allamericancconcrete'
+    site: '@allamericancconcrete'
     cardType: summary_large_image
 
 i18n:
