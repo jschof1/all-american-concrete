@@ -36,7 +36,7 @@ const posts = APP_BLOG.isEnabled ? await findLatestPosts({ count }) : [];
 {
   APP_BLOG.isEnabled ? (
     
-    <WidgetWrapper id={id} isDark={isDark} containerClass={classes?.container as string} bg={bg}>
+    <WidgetWrapper id="blog" isDark={isDark} containerClass={classes?.container as string} bg={bg}>
       <div class="text-3xl sm:text-4xl font-bold text-black uppercase tracking-wider mb-4">LATEST POSTS</div>
       <div class="w-28 h-1 bg-red-700 mb-6"></div>
       <div class="flex flex-col lg:justify-between lg:flex-row mb-8">
