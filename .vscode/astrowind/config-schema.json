@@ -263,7 +263,7 @@
                 }
               },
               "required": ["id"]
-            }
+            }c
           },
           "required": ["googleAnalytics", "googleTagManager"]
         }

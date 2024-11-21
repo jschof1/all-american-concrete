@@ -76,6 +76,9 @@ export interface AnalyticsConfig {
       partytown?: boolean;
     };
   };
+  googleTagManager: {
+    id?: string;
+  };
 }
 
 export interface UIConfig {
