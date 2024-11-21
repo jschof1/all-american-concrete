@@ -1,0 +1,13 @@
+---
+export interface TitleWrapperProps {
+  text: string;
+  centered?: boolean;
+  bgWhite?: boolean;
+}
+const { text, centered = false, bgRed = false } = Astro.props;
+---
+
+<div class={`title-wrapper ${centered ? 'text-center' : ''}`}>
+  <div class="uppercase text-white">{text}</div>
+  <div class={`w-28 h-1 bg-white mx-auto mb-6 mt-2 ${bgRed ? 'bg-red-900' : 'bg-white'}`}></div>
+</div>

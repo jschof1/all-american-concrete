@@ -103,3 +103,12 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.section-wrapper {
+  @apply py-16 sm:py-32;
+}
+
+.title-wrapper {
+  @apply text-3xl sm:text-4xl font-bold tracking-wider mb-4;
+}
+
