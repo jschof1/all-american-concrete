@@ -15,6 +15,9 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 // Comment the line below to disable View Transitions
 import { ViewTransitions } from 'astro:transitions';
 
+import TagsHead from '~/components/common/TagsHead.astro';
+import TagsBody from '~/components/common/TagsBody.astro';
+
 import Navbar from '~/components/main/Navbar.astro';
 
 import type { MetaData as MetaDataType } from '~/types';
@@ -31,7 +34,7 @@ const { language, textDirection } = I18N;
 
 <!doctype html>
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
-  <head>
+<head>
     <CommonMeta />
     <Favicons />
     <CustomStyles />
@@ -39,6 +42,7 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+    <TagsHead />
     <!-- Comment the line below to disable View Transitions -->
     <ViewTransitions fallback="swap" />
   </head>
@@ -47,5 +51,6 @@ const { language, textDirection } = I18N;
     <slot />
     <Navbar />
     <BasicScripts />
+    <TagsBody />
   </body>
 </html>
