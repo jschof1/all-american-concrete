@@ -5,7 +5,7 @@ category: innovation
 tags:
   - innovation
   - sustainability
-image: https://allamericanconcretemichigan.com/assets/images/concrete-innovations-in-modern-construction.avif
+image: https://raw.githubusercontent.com/jschof1/all-american-concrete/refs/heads/main/public/assets/images/concrete-innovations-in-modern-construction.avif
 author: All American Concrete Team
 ---
 # Concrete Innovations in Modern Construction: A Revolution in Durability and Design  
