@@ -4,39 +4,40 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact All American Concrete Michigan',
+  description: 'Get in touch with All American Concrete Michigan for top-quality concrete services. Contact us today for inquiries, quotes, and expert advice.',
+  keywords: 'All American Concrete, Michigan concrete services, contact concrete experts, concrete quotes Michigan',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Contact Us" title="Connect with All American Concrete Michigan Today" />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking for right there! If not, our Michigan-based support team is delighted to help you."
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Your Name',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'Your Email',
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Your Message',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information by All American Concrete Michigan.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Our Michigan support team typically responds within 24 business hours."
   />
 
   <!-- Features2 Widget ************** -->

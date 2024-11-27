@@ -1,0 +1,15 @@
+---
+import Portfolio from '~/components/main/Portfolio.astro';
+import Layout from '~/layouts/PageLayout.astro';
+const metadata = {
+  title: 'Our Portfolio - All American Concrete',
+  description: 'Explore our portfolio to see the quality and diversity of our concrete projects in Michigan. From residential to commercial, we deliver excellence.',
+  keywords: 'All American Concrete, Michigan concrete portfolio, concrete projects, residential concrete, commercial concrete',
+};
+import CTA from '~/components/main/CTA.astro';
+---
+
+<Layout metadata={metadata}>
+  <Portfolio />
+  <CTA />
+</Layout>

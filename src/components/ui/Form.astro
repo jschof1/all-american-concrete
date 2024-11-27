@@ -5,7 +5,9 @@ import Button from '~/components/ui/Button.astro';
 const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props;
 ---
 
-<form>
+<form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.querySelector('button').innerText='Thank you for contacting us!'; return false;">
+  <input type="hidden" name="access_key" value="499b99ea-5e89-4a77-87a5-3069b9d074ff">
+
   {
     inputs &&
       inputs.map(
@@ -24,6 +26,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
                 autocomplete={autocomplete}
                 placeholder={placeholder}
                 class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                required
               />
             </div>
           )
@@ -42,6 +45,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
           rows={textarea.rows ? textarea.rows : 4}
           placeholder={textarea.placeholder}
           class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+          required
         />
       </div>
     )
@@ -56,6 +60,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
             name="disclaimer"
             type="checkbox"
             class="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            required
           />
         </div>
         <div class="ml-3">

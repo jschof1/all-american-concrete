@@ -1,0 +1,75 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import CTA from '~/components/main/CTA.astro'
+import Testimonials from '~/components/widgets/Testimonials.astro';
+const metadata = {
+  title: 'Contact All American Concrete Michigan',
+  description: 'Get in touch with All American Concrete Michigan for top-quality concrete services. Contact us today for inquiries, quotes, and expert advice.',
+  keywords: 'All American Concrete, Michigan concrete services, contact concrete experts, concrete quotes Michigan',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+  <HeroText tagline="Reviews" title="What Our Customers Say About All American Concrete" />
+  <Testimonials
+  testimonials={[
+    {
+      testimonial: `All American Concrete transformed our commercial parking lot with their exceptional concrete work. Their attention to detail and commitment to quality exceeded our expectations.`,
+      name: 'Mark Thompson',
+      job: 'Facilities Manager',
+      image: {
+        src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+        alt: 'Mark Thompson Image',
+      },
+    },
+    {
+      testimonial: `Their team provided us with a durable and aesthetically pleasing concrete solution for our new office building. The project was completed on time and within budget.`,
+      name: 'Emily Martinez',
+      job: 'CEO',
+      image: {
+        src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
+        alt: 'Emily Martinez Image',
+      },
+    },
+    {
+      testimonial: `The team at All American Concrete was professional and efficient. They delivered a high-quality concrete driveway that has significantly enhanced the curb appeal of our property.`,
+      name: 'Laura Simmons',
+      job: 'Homeowner',
+      image: {
+        src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+        alt: 'Laura Simmons Image',
+      },
+    },
+    {
+      testimonial: `We were impressed with their ability to handle our large-scale commercial project. The concrete work was flawless, and their team was a pleasure to work with.`,
+      name: 'Alex Foster',
+      job: 'Director of Operations',
+      image: {
+        src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+        alt: 'Alex Foster Image',
+      },
+    },
+    {
+      testimonial: `Their expertise in concrete solutions is unmatched. They provided us with a robust and visually appealing patio that has become the highlight of our outdoor space.`,
+      name: 'Jessica Collins',
+      job: 'Landscape Architect',
+      image: {
+        src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
+        alt: 'Jessica Collins Image',
+      },
+    },
+    {
+      testimonial: `All American Concrete's dedication to quality and customer satisfaction is evident in their work. They delivered a concrete solution that perfectly met our commercial needs.`,
+      name: 'Michael Carter',
+      job: 'Project Manager',
+      image: {
+        src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+        alt: 'Michael Carter Image',
+      },
+    },
+  ]}
+/>
+  <CTA />
+</Layout>

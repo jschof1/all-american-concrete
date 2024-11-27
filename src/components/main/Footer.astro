@@ -1,74 +1,86 @@
 ---
-import { fetchContent } from '../../utils/fetchContent';
-const contentMap = await fetchContent('Footer');
 import Image from '~/components/common/Image.astro';
 import AllAmericanWhite from '~/assets/images/all-american-white.webp';
 import { Icon } from 'astro-icon/components';
+import { footerData } from '~/navigation';
 ---
-<footer>
-      <div class="bg-gray-800 py-4 text-gray-400">
-        <div class="container px-4 mx-auto">
-          <div class="-mx-4 flex flex-wrap justify-between">
-            <div class="px-4 my-4 w-full xl:w-1/5">
-              <Image src={AllAmericanWhite} alt="All American Concrete Logo" class="mb-4">
-              <p>{contentMap['1pIndiv']}</p>
-              <p>{contentMap['2pIndiv']}</p>
-              <p>{contentMap['3pIndiv']}</p>
-            </div>
-            <div class="px-4 my-4 w-full sm:w-auto">
-              <div>
-                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-red-600">{contentMap['1h2Indiv']}</h2>
-              </div>
-              <ul class="leading-8">
-                <li><a href="#" class="hover:text-red-400">{contentMap['1aInli']}</a></li>
-                <li><a href="#" class="hover:text-red-400">{contentMap['2aInli']}</a></li>
-                <li><a href="#" class="hover:text-red-400">{contentMap['3aInli']}</a></li>
-                <li><a href="#" class="hover:text-red-400">{contentMap['4aInli']}</a></li>
-              </ul>
-            </div>
-            <div class="px-4 my-4 w-full sm:w-auto">
-              <div>
-                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-red-600">{contentMap['2h2Indiv']}</h2>
-              </div>
-              <ul class="leading-8">
-                <li><a href="#" class="hover:text-red-400">{contentMap['5aInli']}</a></li>
-                <li><a href="#" class="hover:text-red-400">{contentMap['6aInli']}</a></li>
-                <li><a href="#" class="hover:text-red-400">{contentMap['7aInli']}</a></li>
-                <li><a href="#" class="hover:text-red-400">{contentMap['8aInli']}</a></li>
-              </ul>
-            </div>
-            <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
-              <div>
-                <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-red-600">{contentMap['3h2Indiv']}</h2>
-              </div>
-              <div class="flex space-x-4">
-                <a href="#" class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-red-400 hover:border-red-400">
-                  <Icon name="fa6-brands:facebook-f" />
-                </a>
-                <a href="#" class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-red-400 hover:border-red-400">
-                  <Icon name="fa6-brands:twitter" />
-                </a>
-                <a href="#" class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-red-400 hover:border-red-400">
-                  <Icon name="fa6-brands:instagram" />
-                </a>
-                <a href="#" class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-red-400 hover:border-red-400">
-                  <Icon name="fa6-brands:linkedin-in" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg-red-900 py-4 text-gray-100">
-        <div class="container mx-auto px-4">
-          <div class="-mx-4 flex flex-wrap justify-between">
-            <div class="px-4 w-full text-center sm:w-auto sm:text-left">
-              {contentMap['15divIndiv']}
-            </div>
-            <div class="px-4 w-full text-center sm:w-auto sm:text-left">{contentMap['16divIndiv']}</div>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-  
+<footer>
+  <div class="bg-gray-800 py-4 text-gray-400">
+    <div class="container px-4 mx-auto">
+      <div class="-mx-4 flex flex-wrap justify-between">
+        <div class="px-4 my-4 w-full text-gray-300 xl:w-1/5">
+          <Image src={AllAmericanWhite} alt="All American Concrete Logo" class="mb-4"/>
+          <div class="mt-2">
+            <p>Michigan, USA</p>
+          </div>
+          <div class="text-sm mt-2">
+            <a href={footerData.secondaryLinks[0].href} class="hover:text-red-400 text-gray-300">{footerData.secondaryLinks[0].text}</a> | 
+            <a href={footerData.secondaryLinks[1].href} class="hover:text-red-400 text-gray-300">{footerData.secondaryLinks[1].text}</a>
+          </div>
+        </div>
+        <div class="px-4 my-4 w-full sm:w-auto">
+          <div>
+              <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-red-600">Quick Links</h2>
+            </div>
+            <ul class="leading-8">
+              {
+                footerData.links[0].links.map((link) => (
+                  <li>
+                    <a href={link.href} class="hover:text-red-400">
+                      {link.text}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div class="px-4 my-4 w-full sm:w-auto">
+            <div>
+              <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-red-600">Services</h2>
+            </div>
+            <ul class="leading-8">
+              {
+                footerData.links[1].links.map((link) => (
+                  <li>
+                    <a href={link.href} class="hover:text-red-400">
+                      {link.text}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
+            <div>
+              <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-red-600">Follow Us</h2>
+            </div>
+            <div class="flex space-x-4">
+              {
+                footerData.links[2].links.map((link) => (
+                  <a
+                    href={link.href}
+                    class="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-red-400 hover:border-red-400"
+                    aria-label={link.ariaLabel}
+                  >
+                    <Icon name={link.icon} />
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-red-900 py-4 text-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="-mx-4 flex flex-wrap justify-between">
+          <div class="px-4 w-full text-center sm:w-auto sm:text-left">
+            © 2023 All American Concrete. All rights reserved.
+          </div>
+          <div class="px-4 w-full text-center sm:w-auto sm:text-left">Made with ❤️ by Aspect Studios</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

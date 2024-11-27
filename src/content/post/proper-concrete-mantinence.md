@@ -116,12 +116,4 @@ As Michigan’s trusted concrete specialists, **All American Concrete** has the 
 
 ---
 
-## Call to Action  
-
-Don’t wait until small issues become costly repairs. **Contact All American Concrete today** for expert maintenance and restoration services. Whether you need sealing, crack repairs, or a complete overhaul, we’re here to help.  
-
-**Call us now** or **visit our website** to schedule a consultation and keep your concrete in excellent condition year-round.  
-
----
-
 Concrete is an investment in your property’s value and functionality. With proper care and the help of professionals like All American Concrete, your surfaces can remain beautiful and durable for decades.
