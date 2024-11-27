@@ -1,5 +1,5 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import CTA from '~/components/main/CTA.astro';
 import Content from '~/components/widgets/Content.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
@@ -15,9 +15,9 @@ const metadata = {
 
   <Hero
     tagline="Services"
-    title="Enhance Your Projects with All American Concrete"
-    subtitle="Discover our expertly crafted concrete solutions tailored for various applications. From residential driveways to commercial foundations, we provide the quality and reliability you need."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Learn More', href: '/' }]}
+    title="All American Concrete:<br> Making Your Concrete Dream a Reality"
+    subtitle="Explore our expertly crafted concrete solutions tailored for diverse applications across Michigan. From residential driveways to commercial foundations, we provide the quality, reliability, and expertise needed to make your concrete projects a reality."
+    actions={[{ variant: 'primary', target: '_blank', text: 'Call Us Today', href: 'tel:+19517900372' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1702359562653-14a321274d47?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'All American Concrete Hero Image',
@@ -108,7 +108,7 @@ const metadata = {
   </Content>
 
 
-  <CallToAction
+  <!-- <CallToAction
     actions={[
       {
         variant: 'primary',
@@ -118,5 +118,6 @@ const metadata = {
     ]}
     title="Explore Our Concrete Services"
     subtitle="Whether it's residential or commercial, All American Concrete in Michigan is your trusted partner for quality concrete solutions."
-  />
+  /> -->
+  <CTA />
 </Layout>

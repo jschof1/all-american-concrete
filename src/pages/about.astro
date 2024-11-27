@@ -1,6 +1,7 @@
 ---
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import CTASection from '~/components/main/CTA.astro';
 
 const metadata = {
   title: 'About us',
@@ -9,26 +10,24 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
   <Hero
     tagline="About us"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: 'https://images.unsplash.com/photo-1688307193832-a6f711942705?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTQyMTV8MHwxfHNlYXJjaHwyfHxtaWNoaWdhbiUyMGhvbWV8ZW58MHx8fHwxNzMyMDM3OTI2fDA&ixlib=rb-4.0.3&q=80&w=400',
+      alt: '',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Discover the Strength and Beauty of <br />
+      <span class="text-accent text-red-800 highlight"> All American Concrete</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+    All American Concrete, based in Michigan, is a leader in providing high-quality concrete solutions. Our team is dedicated to delivering innovative and sustainable concrete services for both residential and commercial projects. With a commitment to excellence and integrity, we ensure that every project meets the highest standards of durability, aesthetics, and environmental responsibility.
     </Fragment>
   </Hero>
 
+  <CTASection />
   <!-- Stats Widget ****************** -->
 
 

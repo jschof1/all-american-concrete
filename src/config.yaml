@@ -10,7 +10,7 @@ metadata:
   title:
     default: All American Concrete
     template: '%s — All American Concrete'
-  description: "All American Concrete delivers top-quality residential and commercial concrete services across Michigan. Call today for expert craftsmanship!"
+  description: "All American Concrete in Michigan delivers top-quality residential and commercial concrete services across Michigan. Call today for expert craftsmanship!"
   robots:
     index: true
     follow: true
